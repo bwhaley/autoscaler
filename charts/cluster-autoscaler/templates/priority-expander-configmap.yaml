@@ -12,6 +12,6 @@ metadata:
   {{- end }}
 data:
   priorities: |-
-{{ .Values.expanderPriorities | indent 4 }}
+{{ toYaml .Values.expanderPriorities | indent 4 }}
 {{- end -}}
 {{- end -}}
